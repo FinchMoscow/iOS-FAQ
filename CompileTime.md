@@ -2,7 +2,6 @@
 Помогает следить за временем компиляции и выявлять "тяжелые" места проекта.
 https://github.com/RobertGummesson/BuildTimeAnalyzer-for-Xcode
 
-
 **2. Сборка только выбранной архитектуры для Debug-билдов**  
 ![arch](images/CompileTime/2.jpg)
 
