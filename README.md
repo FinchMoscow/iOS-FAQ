@@ -1,7 +1,7 @@
 # iOS-FAQ
 Frequently asked questions about ios development in Finch team
 
-- [Настройка скорости сборки проекта] (compilation-time)
+- [Настройка скорости сборки проекта] (CompileTime)
 - [Git flow] (git-flow)  
 - [Архитектура] (Architecture)
 - [Как заливать сборки] (fastlane)
