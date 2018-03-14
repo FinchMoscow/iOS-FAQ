@@ -3,9 +3,8 @@
 https://github.com/RobertGummesson/BuildTimeAnalyzer-for-Xcode
 
 
-**2. Сборка только выбранной архитектуры для Debug-билдов**
-
-![arch](/iOS-FAQ/images/CompileTime/2.jpg)
+**2. Сборка только выбранной архитектуры для Debug-билдов**  
+![arch](/images/CompileTime/2.jpg)
 
 В debug-сборке происходит компиляция проекта только для архитектуры устройства, выбранного для отладки. То есть, выбирая здесь Yes, мы теоретически ускоряем время сборки в два раза.
 
@@ -17,16 +16,16 @@ https://github.com/RobertGummesson/BuildTimeAnalyzer-for-Xcode
 
 Необходимо добавить флаг SWIFT_WHOLE_MODULE_OPTIMIZATION=YES в user-defined-settings.  
 
-![userDefinedSettings](/uploads/7881a318c4e91ed396607dbd205374da/userDefinedSettings.png)  
+![before](/images/CompileTime/3_1.png)
 
 Результат:  
-![finalResult](/uploads/3fd0f8131b21189bacc1ab670c4c279c/finalResult.png)  
+![after](/images/CompileTime/3_2.png)
 
-**3. Разгон Cocoapods**
+**4. Разгон Cocoapods**
 
 Наверное, многие замечали, что кроме самой компиляции еще много времени уходит на разные 'shell scripts':  
 
-![shellScripts](/uploads/e71cd1e975f4ff407f719750e45b10ba/shellScripts.png)  
+![cocoapods](/images/CompileTime/4.png)
 
 При использовании cocoapods и/или carthage их даже несколько. На их выполнение уходит от 3 до 10 секунд каждый раз в зависимости от скорости вашего диска, процессора и положения звезд на небе. Cocoapods прописывает себя туда автоматически, а для Carthage приходится это делать вручную.
 Немного изучив контент, мы выяснили, что эти скрипты занимаются ничем другим как копированием своих ресурсов в сборочную директорию проекта. При этом они не заботятся о том были уже скопированы этих файлы или нет. Хотя, гораздо логичнее было бы проверять наличие нужных ресурсов перед их повторным копированием.  
