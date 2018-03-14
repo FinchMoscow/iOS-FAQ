@@ -5,7 +5,7 @@ https://github.com/RobertGummesson/BuildTimeAnalyzer-for-Xcode
 
 **2. Сборка только выбранной архитектуры для Debug-билдов**
 
-![b14bb0a5615a4f18abbad2aec403d102](/uploads/b23a0e93879932c733dc10795f448296/b14bb0a5615a4f18abbad2aec403d102.jpg)  
+![arch](/iOS-FAQ/images/CompileTime/2.jpg)
 
 В debug-сборке происходит компиляция проекта только для архитектуры устройства, выбранного для отладки. То есть, выбирая здесь Yes, мы теоретически ускоряем время сборки в два раза.
 
