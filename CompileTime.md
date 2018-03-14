@@ -5,7 +5,7 @@ https://github.com/RobertGummesson/BuildTimeAnalyzer-for-Xcode
 
 **2. Сборка только выбранной архитектуры для Debug-билдов**
 
-![b14bb0a5615a4f18abbad2aec403d102](/uploads/b23a0e93879932c733dc10795f448296/b14bb0a5615a4f18abbad2aec403d102.jpg)  
+
 
 В debug-сборке происходит компиляция проекта только для архитектуры устройства, выбранного для отладки. То есть, выбирая здесь Yes, мы теоретически ускоряем время сборки в два раза.
 
@@ -22,7 +22,7 @@ https://github.com/RobertGummesson/BuildTimeAnalyzer-for-Xcode
 Результат:  
 ![finalResult](/uploads/3fd0f8131b21189bacc1ab670c4c279c/finalResult.png)  
 
-**3. Разгон Cocoapods**
+**4. Разгон Cocoapods**
 
 Наверное, многие замечали, что кроме самой компиляции еще много времени уходит на разные 'shell scripts':  
 
