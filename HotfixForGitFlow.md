@@ -10,8 +10,7 @@
 
 *Release from dev*
 
- ![hotfixdev](images/SourceTreeGitFlow/SchemeFromDev.png) 
-
+![hotfixdev](images/SourceTreeGitFlow/SchemeFromDev.png) 
 
 
 Суть в том, что hotfix всегда идет из release ветки и в конце обратно мержится в эту же release ветку, после чего release ветка мержиться обратно с dev
