@@ -2,3 +2,4 @@
 *  [Статья](https://pelevin.pro/2016/04/18/gitflow/)
 *  [Git flow и source tree](https://blog.sourcetreeapp.com/2012/08/01/smart-branching-with-sourcetree-and-git-flow/)
 * [Как настроить git flow в Sourcetree](SourceTreeGitFlow.md)
+* [Как правильно делать hotfix](HotfixForGitFlow.md)
