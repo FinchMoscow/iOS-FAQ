@@ -9,3 +9,4 @@ Frequently asked questions about ios development in Finch team
 - SwiftLint
 - [Библиотеки](AwesomeSwift.md)
 - [Тесты](Tests.md)
+- [Кодогенерация](CodeGen.md)

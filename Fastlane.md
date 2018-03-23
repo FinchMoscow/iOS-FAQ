@@ -1,6 +1,11 @@
 Для отправления сборок используется fastlane
 
-[Статья] (https://www.raywenderlich.com/136168/fastlane-tutorial-getting-started-2) для начального ознакомления 
+# Интро
+
+[Статья](https://www.raywenderlich.com/136168/fastlane-tutorial-getting-started-2) для начального ознакомления 
+
+
+# Настройка Git CI
 
 Единственное дополнение по этой статье в том, что сборка происходит на удаленной машине, поэтому необходимо для нужного проекта установить runner  
 ![fastlane_ci_runner](images/Fastlane/fastlane_ci_runner.png)  
@@ -81,4 +86,20 @@ fail_info_job:
     - curl -g https://api.telegram.org/bot323277544:AAGb_gMsf07F2x4PzAhQXNiKL8Qbk5zhWdc/sendMessage\?chat_id=-1001302491618\&text\=\*UnSuccess\*%20\[$project\]\(https://git.finch.fm/$group/$project/pipelines\)\($branch\)
   when: on_failure
 
+```
+
+# Переустановка fastlane
+
+Переодически fastlane при update, ставит еще один fastlane на машину и из-за этого возникают проблеммы, чтобы этого избежать перед следующим update необходимо полностью удалить старую версию:  
+
+```
+rvm @global do gem uninstall fastlane 
+rvm all do gem uninstall fastlane
+gem uninstall fastlane
+```
+
+Затем можно устанавливать fastlane по новой:  
+
+```
+sudo gem install fastlane
 ```
