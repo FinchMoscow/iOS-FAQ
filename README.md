@@ -11,3 +11,4 @@ Frequently asked questions about ios development in Finch team
 - [Code Style](https://github.com/FinchMoscow/FINCH-swift-style-guide)
 - [Git flow](GitFlow.md)
 - SwiftLint
+- Актуальные подходы
